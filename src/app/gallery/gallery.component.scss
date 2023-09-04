@@ -1,0 +1,14 @@
+.picture-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+	padding: 0.7rem;
+	width: 24%;
+	margin-bottom: 0.6rem;
+}
+
+.picture-container:hover {
+	cursor: pointer;
+}

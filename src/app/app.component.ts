@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'tutto';
+  title = 'Tutto';
+  darkMode:string = "";
+
+  toggleDarkMode($event:boolean) {
+    if ($event) {
+      this.darkMode = "dark";
+    } else {
+      this.darkMode = "";
+    }
+  }
 }

@@ -1,0 +1,14 @@
+<div class="fixed top-24 h-full w-full p-4 bg-gray-800/50" *ngIf="(picture$|async) as picture">
+	<div class="flex flex-col justify-center items-center p-8 rounded bg-pink-200 dark:bg-gray-400">
+		<div class="flex justify-end w-full">
+			<button type="button" (click)="destroy()">
+				<span class="material-icons bg-pink-300 dark:bg-gray-600 px-2 py-1 rounded hover:shadow-md">close</span>
+			</button>
+		</div>
+		<div class="img-container">
+			<img #pictureImg src="{{picture.url}}" alt="{{picture.title}}" width="600px" (mousemove)="zoom($event)" (mouseleave)="resetZoom($event)">
+		</div>
+		<span><b>ID: </b>{{picture.id}}</span>
+		<span><b>Título: </b>{{picture.title}}</span>
+	</div>
+</div>

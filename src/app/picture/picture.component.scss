@@ -1,0 +1,13 @@
+.img-container {
+	height: 600px;
+	width: 600px;
+	overflow: hidden;
+}
+
+img {
+	transition: 0.1s;
+	transform-origin: center;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
